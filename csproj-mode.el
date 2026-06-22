@@ -51,7 +51,7 @@
   (start-process "dotnet" "*dotnet-new*" "dotnet" "new" template-name))
 
 ;;;###autoload
-(define-derived-mode csproj-mode xml-mode "csproj"
+(define-derived-mode csproj-mode nxml-mode "csproj"
   "A major mode for editing csproj and other msbuild-style project files"
   :group 'csproj)
 
